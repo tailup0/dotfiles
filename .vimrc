@@ -70,7 +70,10 @@ set pastetoggle=<F10>
 " status line setting
 set laststatus=2
 let g:lightline = {
-      \ 'colorscheme': 'wombat'
+           \ 'colorscheme': 'wombat',
+           \ 'component': {
+               \ 'filename': '%f'
+           \ }
       \ }
 
 " clipboard setting
