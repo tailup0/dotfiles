@@ -40,6 +40,8 @@ NeoBundle 'tomtom/tcomment_vim'
 NeoBundle 'tomasr/molokai'
 
 " NeoBundle 'stephpy/vim-php-cs-fixer'
+"
+NeoBundle 'vim-scripts/grep.vim'
 
 call neobundle#end()
  
@@ -137,3 +139,4 @@ if has('conceal')
   set conceallevel=2 concealcursor=i
 endif
 
+nnoremap <expr> gr ':Rgrep<CR>'
