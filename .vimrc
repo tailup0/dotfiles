@@ -136,7 +136,9 @@ xmap <C-k> <Plug>(neosnippet_expand_target)
 
 " For snippet_complete marker.
 if has('conceal')
-  set conceallevel=2 concealcursor=i
+  set conceallevel=2 concealcursor=i
 endif
 
-nnoremap <expr> gr ':Rgrep<CR>'
+nnoremap <expr> gr ':tabe<CR>:Rgrep<CR>'
+
+autocmd BufWritePre * :%s/ / /ge
